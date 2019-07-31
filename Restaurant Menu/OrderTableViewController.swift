@@ -12,6 +12,12 @@ class OrderTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        NotificationCenter.default.addObserver(
+            tableView,
+            selector: #selector(tableView.reloadData),
+            name: MenuController.orderUpdateNotification,
+            object: nil)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

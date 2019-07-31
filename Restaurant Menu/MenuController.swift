@@ -11,7 +11,12 @@ import Foundation
 class MenuController {
 
     static let shared = MenuController()
-    var order = Order()
+    static let orderUpdateNotification = Notification.Name("MenuController.orderUpdated")
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpdateNotification, object: nil)
+        }
+    }
 
     let baseURL = URL(string: "http://localhost:8090/")!
 
