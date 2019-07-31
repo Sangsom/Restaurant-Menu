@@ -38,6 +38,7 @@
 		1B5DC6FF22F191CB00652141 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		1B5DC70122F1927800652141 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		1B5DC70322F196E600652141 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		1B5DC70522F1CC4600652141 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		1B5DC6D722F1715700652141 = {
 			isa = PBXGroup;
 			children = (
+				1B5DC70522F1CC4600652141 /* README.md */,
 				1B5DC6E222F1715700652141 /* Restaurant Menu */,
 				1B5DC6E122F1715700652141 /* Products */,
 			);
