@@ -105,7 +105,18 @@
                     <view key="view" contentMode="scaleToFill" id="5O2-rb-MJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-Je-2eY">
+                                <rect key="frame" x="8" y="148" width="398" height="224"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4oa-Je-2eY" firstAttribute="top" secondItem="v4O-UG-dqy" secondAttribute="top" constant="8" id="77K-a9-JiB"/>
+                            <constraint firstItem="4oa-Je-2eY" firstAttribute="leading" secondItem="v4O-UG-dqy" secondAttribute="leading" constant="8" id="8d2-eb-Qfz"/>
+                            <constraint firstItem="4oa-Je-2eY" firstAttribute="height" secondItem="5O2-rb-MJa" secondAttribute="height" multiplier="0.25" id="JNz-8Y-qNG"/>
+                            <constraint firstItem="v4O-UG-dqy" firstAttribute="trailing" secondItem="4oa-Je-2eY" secondAttribute="trailing" constant="8" id="w5h-U6-0J9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v4O-UG-dqy"/>
                     </view>
                 </viewController>
@@ -196,4 +207,7 @@
             <point key="canvasLocation" x="-388.40579710144931" y="518.30357142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="100" height="100"/>
+    </resources>
 </document>
