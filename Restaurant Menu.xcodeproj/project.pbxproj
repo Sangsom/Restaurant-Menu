@@ -18,6 +18,7 @@
 		1B5DC6FC22F1900C00652141 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */; };
 		1B5DC6FE22F1909100652141 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6FD22F1909100652141 /* MenuItem.swift */; };
 		1B5DC70022F191CB00652141 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6FF22F191CB00652141 /* IntermediaryModels.swift */; };
+		1B5DC70222F1927800652141 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC70122F1927800652141 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		1B5DC6FD22F1909100652141 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		1B5DC6FF22F191CB00652141 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
+		1B5DC70122F1927800652141 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1B5DC6E722F1715700652141 /* Main.storyboard */,
 				1B5DC6FD22F1909100652141 /* MenuItem.swift */,
 				1B5DC6FF22F191CB00652141 /* IntermediaryModels.swift */,
+				1B5DC70122F1927800652141 /* Order.swift */,
 				1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */,
 				1B5DC6EA22F1715800652141 /* Assets.xcassets */,
 				1B5DC6EC22F1715800652141 /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 				1B5DC6FE22F1909100652141 /* MenuItem.swift in Sources */,
 				1B5DC6F822F18EED00652141 /* MenuTableViewController.swift in Sources */,
 				1B5DC6FC22F1900C00652141 /* MenuItemDetailViewController.swift in Sources */,
+				1B5DC70222F1927800652141 /* Order.swift in Sources */,
 				1B5DC6FA22F18EF700652141 /* OrderTableViewController.swift in Sources */,
 				1B5DC70022F191CB00652141 /* IntermediaryModels.swift in Sources */,
 				1B5DC6E622F1715700652141 /* ViewController.swift in Sources */,
