@@ -21,7 +21,13 @@ class MenuItemDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        updateUI()
+    }
+
+    func updateUI() {
+        titleLabel.text = menuItem.name
+        priceLabel.text = String(format: "$%2.f", menuItem.price)
+        detailTextLabel.text = menuItem.detailText
     }
 
 }
