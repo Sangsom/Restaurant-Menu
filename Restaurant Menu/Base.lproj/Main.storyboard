@@ -109,12 +109,32 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-Je-2eY">
                                 <rect key="frame" x="8" y="148" width="398" height="224"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jxz-D6-7HX">
+                                <rect key="frame" x="8" y="380" width="310" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 27.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-su-Kww">
+                                <rect key="frame" x="326" y="380" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="GLd-yp-HNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jxz-D6-7HX" firstAttribute="leading" secondItem="v4O-UG-dqy" secondAttribute="leading" constant="8" id="08S-Zw-xSD"/>
                             <constraint firstItem="4oa-Je-2eY" firstAttribute="top" secondItem="v4O-UG-dqy" secondAttribute="top" constant="8" id="77K-a9-JiB"/>
                             <constraint firstItem="4oa-Je-2eY" firstAttribute="leading" secondItem="v4O-UG-dqy" secondAttribute="leading" constant="8" id="8d2-eb-Qfz"/>
+                            <constraint firstItem="v4O-UG-dqy" firstAttribute="trailing" secondItem="fhJ-su-Kww" secondAttribute="trailing" constant="8" id="Ebd-gm-JPI"/>
                             <constraint firstItem="4oa-Je-2eY" firstAttribute="height" secondItem="5O2-rb-MJa" secondAttribute="height" multiplier="0.25" id="JNz-8Y-qNG"/>
+                            <constraint firstItem="fhJ-su-Kww" firstAttribute="leading" secondItem="jxz-D6-7HX" secondAttribute="trailing" constant="8" id="MSZ-kQ-zlo"/>
+                            <constraint firstItem="jxz-D6-7HX" firstAttribute="top" secondItem="4oa-Je-2eY" secondAttribute="bottom" constant="8" id="WOc-Df-ZHh"/>
+                            <constraint firstItem="fhJ-su-Kww" firstAttribute="top" secondItem="4oa-Je-2eY" secondAttribute="bottom" constant="8" id="ll4-Se-bKF"/>
                             <constraint firstItem="v4O-UG-dqy" firstAttribute="trailing" secondItem="4oa-Je-2eY" secondAttribute="trailing" constant="8" id="w5h-U6-0J9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v4O-UG-dqy"/>
