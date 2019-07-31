@@ -30,4 +30,18 @@ class CategoryTableViewController: UITableViewController {
         }
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCellIdentifier", for: indexPath)
+        configure(cell, forItemAt: indexPath)
+        return cell
+    }
+
+    func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath) {
+        let categoryString = categories[indexPath.row]
+        cell.textLabel?.text = categoryString.capitalized
+    }
 }
