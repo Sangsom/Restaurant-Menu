@@ -16,6 +16,7 @@
 		1B5DC6F822F18EED00652141 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6F722F18EED00652141 /* MenuTableViewController.swift */; };
 		1B5DC6FA22F18EF700652141 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6F922F18EF700652141 /* OrderTableViewController.swift */; };
 		1B5DC6FC22F1900C00652141 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */; };
+		1B5DC6FE22F1909100652141 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC6FD22F1909100652141 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B5DC6F722F18EED00652141 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		1B5DC6F922F18EF700652141 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		1B5DC6FD22F1909100652141 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1B5DC6F722F18EED00652141 /* MenuTableViewController.swift */,
 				1B5DC6F922F18EF700652141 /* OrderTableViewController.swift */,
 				1B5DC6E722F1715700652141 /* Main.storyboard */,
+				1B5DC6FD22F1909100652141 /* MenuItem.swift */,
 				1B5DC6FB22F1900C00652141 /* MenuItemDetailViewController.swift */,
 				1B5DC6EA22F1715800652141 /* Assets.xcassets */,
 				1B5DC6EC22F1715800652141 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5DC6FE22F1909100652141 /* MenuItem.swift in Sources */,
 				1B5DC6F822F18EED00652141 /* MenuTableViewController.swift in Sources */,
 				1B5DC6FC22F1900C00652141 /* MenuItemDetailViewController.swift in Sources */,
 				1B5DC6FA22F18EF700652141 /* OrderTableViewController.swift in Sources */,
