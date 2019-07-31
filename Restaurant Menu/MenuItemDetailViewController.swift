@@ -31,4 +31,10 @@ class MenuItemDetailViewController: UIViewController {
         detailTextLabel.text = menuItem.detailText
     }
 
+    @IBAction func addToOrderButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+    }
 }
