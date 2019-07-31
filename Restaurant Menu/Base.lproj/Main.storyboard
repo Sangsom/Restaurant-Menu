@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Restaurant-->
         <scene sceneID="PFU-L8-tlr">
             <objects>
                 <tableViewController id="Lxj-nP-B9Y" customClass="CategoryTableViewController" customModule="Restaurant_Menu" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +36,7 @@
                             <outlet property="delegate" destination="Lxj-nP-B9Y" id="yTs-ny-Xmx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="YN7-VD-UYf"/>
+                    <navigationItem key="navigationItem" title="Restaurant" id="YN7-VD-UYf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v93-1s-C0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +58,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ZwC-wh-rH9" kind="show" id="QAr-R4-OaN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,6 +72,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4z-wv-rwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2359" y="159"/>
+        </scene>
+        <!--Menu Item Detail View Controller-->
+        <scene sceneID="5RC-6b-NLu">
+            <objects>
+                <viewController id="ZwC-wh-rH9" customClass="MenuItemDetailViewController" customModule="Restaurant_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5O2-rb-MJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v4O-UG-dqy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l45-X3-4Wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3242" y="159"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="niR-7f-U6Q">
