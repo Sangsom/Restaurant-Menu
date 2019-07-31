@@ -26,7 +26,7 @@ class MenuItemDetailViewController: UIViewController {
 
     func updateUI() {
         titleLabel.text = menuItem.name
-        priceLabel.text = String(format: "$%2.f", menuItem.price)
+        priceLabel.text = String(format: "$%.2f", menuItem.price)
         detailTextLabel.text = menuItem.detailText
     }
 
