@@ -11,6 +11,7 @@ import Foundation
 class MenuController {
 
     static let shared = MenuController()
+    var order = Order()
 
     let baseURL = URL(string: "http://localhost:8090/")!
 
