@@ -31,4 +31,20 @@ class MenuTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuItems.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier", for: indexPath)
+        configure(cell, forItemAt: indexPath)
+        return cell
+    }
+
+    func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath) {
+        let menuItem = menuItems[indexPath.row]
+        cell.textLabel?.text = menuItem.name
+        cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
+    }
 }
