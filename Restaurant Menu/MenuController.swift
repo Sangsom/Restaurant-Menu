@@ -31,7 +31,13 @@ class MenuController {
         components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
         let menuURL = components.url!
         let task = URLSession.shared.dataTask(with: menuURL) { (data, response, error) in
-
+            let jsonDecoder = JSONDecoder()
+            if let data = data,
+                let menuItems = try? jsonDecoder.decode(MenuItems.self, from: data) {
+                completion(menuItems.items)
+            } else {
+                completion(nil)
+            }
         }
         task.resume()
     }
