@@ -44,4 +44,12 @@ class CategoryTableViewController: UITableViewController {
         let categoryString = categories[indexPath.row]
         cell.textLabel?.text = categoryString.capitalized
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MenuSegue" {
+            let menuTableViewController = segue.destination as! MenuTableViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            menuTableViewController.category = categories[index]
+        }
+    }
 }
