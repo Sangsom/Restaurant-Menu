@@ -52,7 +52,13 @@ class MenuController {
         let jsonData = try? jsonEncoder.encode(data)
         request.httpBody = jsonData
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-
+            let jsonDecoder = JSONDecoder()
+            if let data = data,
+                let preparationTime = try? jsonDecoder.decode(PreparationTime.self, from: data) {
+                completion(preparationTime.prepTime)
+            } else {
+                completion(nil)
+            }
         }
         task.resume()
     }
