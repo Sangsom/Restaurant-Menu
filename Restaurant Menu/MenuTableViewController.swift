@@ -9,8 +9,6 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
-
-    let menuController = MenuController()
     var menuItems = [MenuItem]()
     var category: String!
 
@@ -18,7 +16,7 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
 
         title = category.capitalized
-        menuController.fetchMenuItems(forCategory: category) { (menuItems) in
+        MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
             if let menuItems = menuItems {
                 self.updateUI(with: menuItems)
             }
